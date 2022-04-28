@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 900px;
+  margin: 50px auto;
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 10px;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media(max-width:  576px) {
+  .container {
+    width: 450px;
+  }
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  background-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  background-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  text-shadow: 1px 1px 3px rgba(146, 145, 145, 0.2);
+}
+
+#task-form {
+  text-align: center;
+}
+
+#task-input {
+  width: 315px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+}
+
+#task-submit-btn {
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(35, 35, 48);
+  color: rgb(189, 189, 189);
+}
+
+#task-submit-btn:hover {
+  background-color: rgb(33, 33, 44);
+  color:rgb(145, 145, 145);
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(189, 189, 189);
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+
+.task-content {
+  width: 300px;
+  margin: 4px;
+  padding: 8px;
+  border: none;
+  background-color:rgb(216, 213, 213);
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.edit-delete-btns button {
+  width: 50px;
+  text-align: center;
+  padding: 8px;
+  margin: 4px;
+}
+
+.edit {
+  color: white;
+  background-color: rgb(3, 197, 3);
+  border-radius: 3px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.delete {
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.edit:hover {
+  background-color: rgb(1, 173, 1);
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: rgb(207, 4, 4);
+  cursor: pointer;
+
+}
+
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.edit-delete-btns {
+  display: flex;
+
+}
