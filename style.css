@@ -5,20 +5,23 @@
 }
 
 body {
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fafbfd;
+
 }
 
+
+
 .container {
-  width: 900px;
-  margin: 50px auto;
-  background-color: hsl(216, 12%, 8%);
+  width: 1000px;
+  margin: 40px auto;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(236, 234, 234);
   border-radius: 10px;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
 
 @media(max-width: 992px) {
   .container {
@@ -32,71 +35,75 @@ body {
   }
 }
 
-@media(max-width:  576px) {
+@media(max-width:576px) {
   .container {
-    width: 450px;
+    width: 300px;
+  }
+  .task {
+    width: 150px;
+  }
+  #task-submit-btn {
+    margin-top: 8px;
   }
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 40px;
-  background-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  background-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-  text-shadow: 1px 1px 3px rgba(146, 145, 145, 0.2);
+  font-size: 36px;
 }
+
+
 
 #task-form {
   text-align: center;
+
 }
 
 #task-input {
-  width: 315px;
+  width: 250px;
   height: 30px;
   border-radius: 5px;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   text-align:center;
 }
 
 #task-submit-btn {
   height: 30px;
-  width: 90px;
+  width: 62px;
   border-radius: 5px;
   border: none;
-  font-family: 'Open Sans', sans-serif;
-  background-color: rgb(35, 35, 48);
-  color: rgb(189, 189, 189);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(78, 78, 255);
+  color: white;
 }
 
 #task-submit-btn:hover {
-  background-color: rgb(33, 33, 44);
-  color:rgb(145, 145, 145);
+  background-color: rgb(49, 49, 243);
   cursor: pointer;
 }
 
 h2 {
   text-align: center;
   margin-top: 30px;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(189, 189, 189);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
   margin-bottom: 10px;
   font-size: 28px;
 }
 
 
 .task-content {
-  width: 300px;
+  width: 250px;
   margin: 4px;
   padding: 8px;
   border: none;
-  background-color:rgb(216, 213, 213);
+  background-color: white;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .edit-delete-btns button {
@@ -111,7 +118,7 @@ h2 {
   background-color: rgb(3, 197, 3);
   border-radius: 3px;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .delete {
@@ -119,7 +126,7 @@ h2 {
   background-color: red;
   border-radius: 3px;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .edit:hover {
@@ -137,13 +144,35 @@ h2 {
 .tasks {
   display: flex;
   flex-wrap: wrap;
+  width: 500px;
   justify-content: center;
   align-items: center;
-  width: 450px;
   margin: 0 auto;
 }
 
 .edit-delete-btns {
   display: flex;
+}
 
+@media(max-width: 992px) {
+  .tasks {
+    width: 500px;
+  }
+}
+
+@media(max-width: 768px) {
+  .tasks {
+    width: 500px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .tasks {
+    width: 300px;
+  }
+
+  .task-content {
+    width: 130px;
+  }
 }
